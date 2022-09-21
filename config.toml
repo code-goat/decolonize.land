@@ -1,0 +1,156 @@
+baseurl = "https://blissful-leavitt-1cd841.netlify.com/"
+languageCode = "en-us"
+title = "goat.camp"
+#theme = "hugo-creative-theme"
+googleAnalytics = ""
+
+# [markup]
+#   [markup.goldmark]
+#     [markup.goldmark.extensions]
+#       definitionList = true
+#       footnote = true
+#       linkify = true
+#       strikethrough = true
+#       table = true
+#       taskList = true
+#       typographer = true
+#     [markup.goldmark.parser]
+#       attribute = true
+#       autoHeadingID = true
+#       autoHeadingIDType = "github"
+#     [markup.goldmark.renderer]
+#       hardWraps = false
+#       unsafe = false
+#       xHTML = false
+
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "goat.camp"
+	description = "SEGG - Social-Ecological Graziers Guild"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+	# Navigation
+	[params.navigation]
+		brand = "goat.camp"
+
+		[params.navigation.links]
+			about     = "About"
+			services  = "Values"
+			portfolio = "Projects & Services"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = ""
+		subtitle   = ""
+		#buttonText = "Social Ecological Graziers Guild"
+
+
+	# About section
+	[params.about]
+		headline    = "About Us"
+		header = "About Us"
+#		beepboop = "test"
+		description = """The Social-Ecological Graziers Guild's mission is to promote bioregional awareness and to reduce invasive or dominating vegetation in environmentally responsible ways. Working in and around the Finger Lakes in Western New York, the Social-Ecological Graziers Guild accomplishes this mission by partnering with organizations, land owners, and businesses to allow our targeted goat herd to eat vegetation on overgrown properties. Goats help open space and reduce plant competition, thus setting the stage for additional land management and restoration, such as re-introducing native, medicinal & food plants.
+		\nBy clearing unwanted vegetation with goats rather than using management products like herbicides, we help keep our waterways clean while restoring native plant communities. Goats can traverse terrain that is difficult or impossible for people and machinery. They work long hours, and the only fuel they require is the plants they'll eat. Goats clearing an overgrown neighborhood space can create good community conversation, provide volunteer opportunities to increase community engagement, and pave the way to new opportunities in shared spaces!
+		\nWe offer Social-Ecological Services, Products, Consulting & Education in the Finger Lakes Region of Upstate New York (Haudenosaunee Ancestral Territory), including:\n
+#### •TARGETED ECOLOGICAL GRAZING\n
+#### •CHEMICAL-FREE INVASIVE & NOXIOUS WEED REMOVAL\n
+#### •INTEGRATED FOOD & ECOLOGY CONSULTING\n
+#### •URBAN FOOD & NATIVE PLANT LANDSCAPING\n
+#### •REGIONAL GARDEN & PLANTING CONSULTATION\n
+#### •CUSTOM YURT CONSTRUCTION\n
+
+\n### CHECK OUT OUR PROJECTS & SERVICES BELOW!"""
+
+	# Service section
+	[params.services]
+		headline = "Our Values"
+
+		[[params.services.list]]
+				icon = "fa-smile"
+				title = "Relationship"
+				description = "Goats are social creatures; they play together, they teach each other, they protect each other (Did you know, a group of goats is called a 'tribe'?) Like goats do naturally, our human communities need to get together to find new ways of dealing with bioregional problems."
+
+		[[params.services.list]]
+				icon = "fa-water"
+				title = "Chemical-Free"
+				description = "Goats manage vegetation without herbicides, and they reduce the need for petroleum fuels and expensive or dangerous machinery. By removing these problems, goats offer a clean method of plant control without endangering our vital water ways & watersheds"
+
+    [[params.services.list]]
+	    	icon = "fa-tree"
+				title = "Ecological Diversity"
+        description = "Our Ecological Grazing services remove encroaching invasive & noxious plants, and promote the proliferation of native plant communities through removing plant competition, spreading native seed, and planting back ecologically relevant species"
+
+		[[params.services.list]]
+				icon = "fa-globe-americas"
+				title = "Local & Global"
+				description = "As our environment changes, we need to continually adapt our thinking and practices to new and creative ways to keep us in right relationship with the ecological systems we are part of; from our local neighborhood, to our global community"
+
+		#[[params.services.list]]
+	  	#	icon = "fa-mortar-pestle"
+      #  title = "Medicines"
+      #  description = "Why grow just ornamental plants around your house and yard? Why not grow plants for food and medicine instead with the same amount of effort? Let us show you how!"
+
+  #  [[params.services.list]]
+      #  icon = "fa-hiking"
+      #  title = "Adventure"
+    #    description = "Interdependence and stuff"
+
+	#	[[params.services.list]]
+		#    icon = "fa-hand-holding-heart"
+		 #   title = "Cooperation"
+		 #   description = "We feel it is better to *with* each other and the earth, than against it."
+
+	#	[[params.services.list]]
+		#	  icon = "fa-carrot"
+		#		title = "Food"
+	#			description = "YO! We need it! So let's do it!"
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+    # Aside section
+	[params.aside]
+		headline = "Check Out our Fundraising Campaign!"
+
+		[params.aside.button]
+			text = """Donate!"""
+			link = 'https://donorbox.org/social-ecological-graziers-guild'
+
+	# Contact section
+	[params.contact]
+		headline = "We Want to Work with You!"
+		description = "Ready to start your next project? Have a question about our services? Feel free to GIVE US A CALL or SEND US AN EMAIL and we will get back to you as soon as possible!"
+		phone = "585.204.0531"
+		email = "contact@goat.camp"
+
+	 # Google Maps section
+    #    [params.location]
+	# 	latitude  = "42.52151"
+	 #	longitude = "-77.16221"
+	 #	maps_api_key = ""
